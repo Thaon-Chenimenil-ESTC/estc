@@ -3,10 +3,8 @@
     <Card>
         <template #title>Joueurs</template>
         <template #content>
-            <p class="m-0">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae numquam deserunt quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque
-                quas!
-            </p>
+            <small>powered by <a target="_blank" href="https://www.pingpocket.fr/" >www.pingpocket.fr</a></small>
+            <iframe frameborder="1" name="pingpocket" width="100%" height="800" scrolling="auto" src="https://www.pingpocket.fr/app/fftt/clubs/06880145/licencies?SORT=ALPHABETIC" ><p>iframe non supportée</p></iframe>
         </template>
     </Card>
 </template>
