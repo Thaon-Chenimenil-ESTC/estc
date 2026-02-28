@@ -1,14 +1,9 @@
 <template>
-    <!--
     <main class="home-page">
         <section class="hero-image" aria-label="Photo du club de tennis de table">
             <img :src="heroImage" alt="Entraînement de tennis de table au club" />
-            <div class="hero-overlay">
-                <h1>Club de Tennis de Table</h1>
-                <p>Bienvenue au club : compétition, loisir et convivialité toute l'année.</p>
-            </div>
         </section>
-    -->
+
 
         <section class="content-section intro">
             <h2>Bienvenue</h2>
