@@ -53,14 +53,14 @@ import heroImage from '../assets/photo-pongistes-estc.jpg';
     position: sticky;
     top: 0;
     height: 20vh;
-    min-height: 800px;
+    min-height: 1362px;
     overflow: hidden;
     z-index: 0;
 }
 
 .hero-image img {
     width: 100%;
-    height: 150%;
+    height: 100%;
     object-fit: cover;
     filter: saturate(1.1);
 }
@@ -71,7 +71,7 @@ import heroImage from '../assets/photo-pongistes-estc.jpg';
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    padding: clamp(1.5rem, 1vw, 1rem);
+    padding: clamp(1.5rem, 3vw, 3rem);
     color: #31313d;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 15%, rgba(0, 0, 0, 0.75) 100%);
 }
@@ -81,7 +81,7 @@ import heroImage from '../assets/photo-pongistes-estc.jpg';
     z-index: 1;
     margin: 0 auto;
     padding: 4rem clamp(1.2rem, 3vw, 2.5rem);
-    background: #ffffff;
+    background: #31313d;
     border-top: 1px solid #e7e9f1;
     max-width: 1100px;
 }
