@@ -11,7 +11,6 @@ export {}
 /* prettier-ignore */
 declare module 'vue' {
   export interface GlobalComponents {
-    Acceuil: typeof import('./src/components/Acceuil.vue')['default']
     Accordion: typeof import('primevue/accordion')['default']
     AccordionContent: typeof import('primevue/accordioncontent')['default']
     AccordionHeader: typeof import('primevue/accordionheader')['default']
