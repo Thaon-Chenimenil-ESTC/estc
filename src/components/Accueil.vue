@@ -18,7 +18,7 @@
             <h2>Entraînements</h2>
             <p>
                 Séances encadrées, ateliers techniques, matchs à thème et créneaux libres :
-                tout est pensé pour progresser à son rythme, dans une ambiance dynamique.
+                tout est pensé pour progresser à son rythme, dans une ambiance dynamique et conviviale.
             </p>
         </section>
 
@@ -41,7 +41,7 @@
 </template>
 
 <script setup lang="ts">
-import heroImage from '../assets/tableau_entrainements.JPG';
+import heroImage from '../assets/photo-pongistes-estc.jpg';
 </script>
 
 <style scoped>
