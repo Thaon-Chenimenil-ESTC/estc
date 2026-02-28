@@ -52,7 +52,7 @@ import heroImage from '../assets/photo-pongistes-estc.jpg';
 .hero-image {
     position: sticky;
     top: 0;
-    height: 70vh;
+    height: 20vh;
     min-height: 800px;
     overflow: hidden;
     z-index: 0;
