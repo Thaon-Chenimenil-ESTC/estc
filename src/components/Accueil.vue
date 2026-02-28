@@ -53,7 +53,7 @@ import heroImage from '../assets/photo-pongistes-estc.jpg';
     position: sticky;
     top: 0;
     height: 70vh;
-    min-height: 420px;
+    min-height: 800px;
     overflow: hidden;
     z-index: 0;
 }
