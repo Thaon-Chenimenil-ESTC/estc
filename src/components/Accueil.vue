@@ -50,7 +50,7 @@ import heroImage from '../assets/photo-pongistes-estc.jpg';
 
 <style scoped>
 .home-page {
-    background: #31313c;
+    background: #ffffff;
 }
 
 .hero-image {
@@ -116,10 +116,10 @@ import heroImage from '../assets/photo-pongistes-estc.jpg';
 .content-section {
     position: relative;
     z-index: 1;
-    margin: 0 auto;
-    padding: 4rem clamp(1.2rem, 3vw, 2.5rem);
+    margin: 0;
+    padding: 4rem clamp(1.2rem, 3vw, 4rem);
     background: #31313c;
-    width: min(90%, 1400px);
+    width: 100%;
 }
 
 .content-section h2 {
@@ -137,8 +137,8 @@ import heroImage from '../assets/photo-pongistes-estc.jpg';
 
 .intro {
     margin-top: 0;
-    border-top-left-radius: 1.2rem;
-    border-top-right-radius: 1.2rem;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
     box-shadow: 0 -12px 35px rgba(20, 30, 70, 0.2);
 }
 
@@ -176,7 +176,7 @@ import heroImage from '../assets/photo-pongistes-estc.jpg';
     }
 
     .content-section {
-        width: min(92%, 1280px);
+        width: 100%;
     }
 
     .scroll-indicator {

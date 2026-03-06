@@ -7,13 +7,19 @@
         <div class="nav-wrapper card">
             <Menubar :model="items">
                 <template #item="{ item, props, hasSubmenu }">
-                    <router-link v-if="item.route" v-slot="{ href, navigate }" :to="item.route" custom>
-                        <a v-ripple :href="href" v-bind="props.action" @click="navigate">
+                    <router-link v-if="item.route" v-slot="{ href, navigate, isActive }" :to="item.route" custom>
+                        <a
+                            v-ripple
+                            :href="href"
+                            v-bind="props.action"
+                            :class="['menu-link', { active: isActive }]"
+                            @click="navigate"
+                        >
                             <span :class="item.icon" />
                             <span>{{ item.label }}</span>
                         </a>
                     </router-link>
-                    <a v-else v-ripple :href="item.url" :target="item.target" v-bind="props.action">
+                    <a v-else v-ripple :href="item.url" :target="item.target" v-bind="props.action" class="menu-link">
                         <span :class="item.icon" />
                         <span>{{ item.label }}</span>
                         <span v-if="hasSubmenu" class="pi pi-fw pi-angle-down" />
@@ -88,15 +94,31 @@ const items = ref([
     gap: 0.5rem;
 }
 
+
+.menu-link,
+.menu-link span,
+.menu-link .pi {
+    color: #ffffff !important;
+}
+
 .nav-wrapper :deep(.p-menubar-item-link),
 .nav-wrapper :deep(.p-menubar-item-link .p-menubar-item-label),
 .nav-wrapper :deep(.p-menubar-item-link .pi) {
     color: #ffffff;
 }
 
+.nav-wrapper :deep(.p-menubar-item-link) {
+    border: 1px solid transparent;
+    background: transparent;
+    transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
 .nav-wrapper :deep(.p-menubar-item-link:hover),
-.nav-wrapper :deep(.p-menubar-item-link:focus-visible) {
-    background: rgba(255, 255, 255, 0.12);
+.nav-wrapper :deep(.p-menubar-item-link:focus-visible),
+.nav-wrapper :deep(.p-menubar-item-link.active) {
+    background: transparent;
+    border-color: #ffffff;
+    color: #ffffff !important;
 }
 
 @media (max-width: 768px) {
